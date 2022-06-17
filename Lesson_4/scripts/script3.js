@@ -64,21 +64,17 @@ workers.forEach(function({id, first_name, last_name, age, rate, days, photo}){
   const ageElem = document.createElement('p');
   const salaryElem = document.createElement('p');
   const photoElem = document.createElement('img');
-  // const emailElem = document.createElement('a');
 
   idElem.innerText = `ID: ${id}`;
   firstNameElem.innerText = `First name: ${first_name}`;
   lastNameElem.innerText = `Last name: ${last_name}`;
   ageElem.innerText = `Age: ${age}`;
   salaryElem.innerText = `Salary: ${rate * days}`;
-  // emailElem.innerText = email;
 
   photoElem.setAttribute('src', photo);
   photoElem.setAttribute('alt', "photo of worker");
-  // emailElem.setAttribute('href', `mailto:${email}`);
 
-
- 
+  container.classList.add('container');
 
   container.append(idElem, firstNameElem, lastNameElem, ageElem, salaryElem, photoElem);
   rootElem.append(container);
@@ -88,6 +84,3 @@ workers.forEach(function({id, first_name, last_name, age, rate, days, photo}){
 // emailElem.href = emailElem.innerText;      
 // emailElem.innerText = email;                 
 // container.append(idElem, emailElem)
-
-
-//Новый комментарий

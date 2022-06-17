@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: beige;
+}
