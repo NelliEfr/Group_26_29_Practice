@@ -77,8 +77,8 @@ workers.forEach(function({id, first_name, last_name, age, rate, days, photo}){
   photoElem.setAttribute('alt', "photo of worker");
   // emailElem.setAttribute('href', `mailto:${email}`);
 
-  // <img src="ссылка" alt="альтернативный текст">
-  // <a href="mailto:email"></a>
+
+ 
 
   container.append(idElem, firstNameElem, lastNameElem, ageElem, salaryElem, photoElem);
   rootElem.append(container);
@@ -89,3 +89,5 @@ workers.forEach(function({id, first_name, last_name, age, rate, days, photo}){
 // emailElem.innerText = email;                 
 // container.append(idElem, emailElem)
 
+
+//Новый комментарий
