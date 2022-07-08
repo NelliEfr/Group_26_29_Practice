@@ -55,3 +55,36 @@ add_form.addEventListener('submit', (event) => {
   element.innerText = content.value;
   add_form_result.append(element);
 });
+
+
+//Cоздать кнопку с размерами 30 на 30 пикселей, при каждом нажатии увеличивать ее на 10 пикселей.
+
+let incr_btn = document.querySelector('.incr_btn');
+let incr_btn_params = 30;
+
+let incr_btn_render = (size) => {
+  incr_btn.style.width = size + 'px';
+  incr_btn.style.height = size + 'px';
+}
+incr_btn_render(incr_btn_params);
+
+incr_btn.addEventListener('click', () => {
+  incr_btn_params += 10;
+  incr_btn_render(incr_btn_params);
+});
+
+
+// Cоздать кнопку, у которой при клике рандомно меняется цвет заднего фона
+
+let random_color_btn = document.querySelector('.random_color_btn');
+
+let get_color_num = () => Math.round(Math.random()*255);
+
+random_color_btn.addEventListener('click', (event) => {
+  event.target.style.backgroundColor = `rgb(${get_color_num()}, ${get_color_num()}, ${get_color_num()})`
+});
+
+// rgb(X, Y, Z) => 0 - 255
+// let a = Math.round(Math.random()*255 + 1); // 0-255 => 1-256
+// let b = Math.round(Math.random()*254 + 1); // 0-254 => 1-255
+
