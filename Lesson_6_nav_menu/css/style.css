@@ -81,3 +81,102 @@ nav ul {
     overflow-x: hidden;
   }
 }
+
+
+/* Form ================= */
+
+.login_form {
+  width: 350px;
+  padding: 16px;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* border: 1px solid black;
+  border-radius: 20px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_title {
+  margin: 15px 0;
+}
+
+.form_input {
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  padding: 13px;
+  margin: 2px 0;
+}
+
+.form_input:focus {
+  outline: none;
+  border-color: #FFE44D;
+}
+
+.form_reset_password_text {
+  color: gray;
+  font-size: 13px;
+  text-align: end;
+  margin: 15px 0;
+}
+
+.form_btn {
+  font-weight: bold;
+  border-radius: 55px;
+  padding: 14px;
+  margin: 2px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit_btn {
+  background-color: #FFE44D;
+  border: 1px solid transparent;
+}
+
+.redirect_btn {
+  background-color: transparent;
+  border: 1px solid #CFD8DC;
+}
+
+.cross_btn {
+  font-size: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+/* Modal ================= */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  visibility: hidden;
+}
+
+.popup_body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_content {
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+}
+
+.popup.popup_active {
+  visibility: visible;
+}
