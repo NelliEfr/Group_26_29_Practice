@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card({id, eng, rus, lang}) {
+export default function Card({id, eng, rus, lang, change}) {
   const text = (lang === 'rus') ? rus : eng;
 
   const cardStyle = {
@@ -11,11 +11,12 @@ export default function Card({id, eng, rus, lang}) {
     fontSize: '30px',
     borderRadius: '10px',
     color: lang === 'rus' ? '#2980b9' : 'white',
-    border: lang === 'rus' ? '3px solid #2980b9' : 'none'
+    border: lang === 'rus' ? '3px solid #2980b9' : 'none',
+    cursor: 'pointer'
   }
 
   return (
-    <div style={cardStyle}>
+    <div style={cardStyle} onClick={() => change(id)}>
       {text}
     </div>
   )

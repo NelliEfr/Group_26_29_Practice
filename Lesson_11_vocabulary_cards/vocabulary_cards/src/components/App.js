@@ -32,10 +32,19 @@ function App() {
     }));
   }
 
+  const change_lang = (id) => {
+    setCards(cards.map(el => {
+      if(el.id === id){
+        el.lang = el.lang === 'rus' ? 'eng' : 'rus' 
+      }
+      return el
+    }))
+  }
+
   return (
     <div>
       <Form add={addCard}/>
-      <CardsContainer cards={cards} />
+      <CardsContainer cards={cards} change={change_lang}/>
       <Triggers change_to_eng={change_to_eng} change_to_rus={change_to_rus}/>
     </div>
   );
