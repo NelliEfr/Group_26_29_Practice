@@ -8,3 +8,9 @@
   max-width: 1116px;
   margin: 0 auto;
 }
+
+.subheader {
+  font-size: 24px;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}

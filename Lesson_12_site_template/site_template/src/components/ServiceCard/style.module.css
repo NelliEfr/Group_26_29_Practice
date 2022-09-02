@@ -1,0 +1,9 @@
+.card_item {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  font-size: 24px;
+  padding: 45px;
+}
