@@ -1,0 +1,28 @@
+.post {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  width: 400px;
+
+  position: relative;
+}
+
+.like_btn {
+  border: 1px solid black;
+  background-color: lightcyan;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.like_btn_active {
+  background-color: rgb(43, 75, 254);
+  border: 1px solid rgb(43, 75, 254);
+  color: white;
+}
