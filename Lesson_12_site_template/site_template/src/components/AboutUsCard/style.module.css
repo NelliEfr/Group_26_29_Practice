@@ -1,0 +1,21 @@
+.card_item {
+  background-color:#EBEBEB;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_item:hover {
+  background-color: #005fa3;
+  color: white;
+}
+
+.value {
+  font-size: 55px;
+}
+
+.title {
+  font-size: 14px;
+  width: 107px;
+}

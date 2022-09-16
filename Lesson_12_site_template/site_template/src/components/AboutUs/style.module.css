@@ -1,0 +1,25 @@
+.about_us {
+  padding: 140px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.infoText {
+  width: 445px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.achievements {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 30px;
+}
+
+.accent {
+  display: block;
+  color: #005fa3;
+}
