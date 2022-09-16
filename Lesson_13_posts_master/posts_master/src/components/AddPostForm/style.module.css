@@ -1,0 +1,18 @@
+.postForm input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.postForm button {
+  padding: 10px;
+  margin: 5px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 200px;
+}
