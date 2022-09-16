@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../Button'
 import logo from './media/buh_one_logo.png'
 import s from './style.module.css'
+import { MenuOutlined } from '@ant-design/icons'
 
 export default function Navbar() {
   return (
@@ -18,6 +19,7 @@ export default function Navbar() {
           <li>Контакты</li>
         </ul>
         <Button type='light_mode'>Связаться</Button>
+        <MenuOutlined className={s.burger_menu}/>
       </div>
     </nav>
   )

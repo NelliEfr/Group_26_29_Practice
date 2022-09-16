@@ -15,3 +15,25 @@
   margin: 0 20px;
 }
 
+.burger_menu {
+  display: none;
+  font-size: 40px;
+}
+
+@media (max-width: 1055px){
+  .burger_menu {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .wrapper button {
+    display: none;
+  }
+
+  /* .wrapper {
+    padding: 0 90px;
+  } */
+}

@@ -14,3 +14,9 @@
   color: #BDBDBD;
   margin-bottom: 40px;
 }
+
+@media (max-width: 1055px){
+  .wrapper {
+    padding: 0 90px;
+  }
+}
