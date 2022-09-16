@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button'
 import logo from './media/buh_one_logo.png'
 import s from './style.module.css'
 
@@ -16,6 +17,7 @@ export default function Navbar() {
           <li>О компании</li>
           <li>Контакты</li>
         </ul>
+        <Button type='light_mode'>Связаться</Button>
       </div>
     </nav>
   )

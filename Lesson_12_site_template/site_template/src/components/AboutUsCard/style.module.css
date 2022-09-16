@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .card_item {
   background-color:#EBEBEB;
   padding: 30px 40px;
@@ -11,6 +17,11 @@
   color: white;
 }
 
+.card_item:hover > button {
+  border-color: white;
+  color: white;
+}
+
 .value {
   font-size: 55px;
 }
@@ -18,4 +29,5 @@
 .title {
   font-size: 14px;
   width: 107px;
+  margin: 30px 0;
 }
