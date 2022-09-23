@@ -4,3 +4,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1055px){
+  .footer {
+    margin: 0 90px;
+  }
+}

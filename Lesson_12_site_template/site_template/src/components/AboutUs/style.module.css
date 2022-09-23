@@ -23,3 +23,19 @@
   display: block;
   color: #005fa3;
 }
+
+@media (max-width: 1055px){
+  .about_us {
+    margin: 0 90px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .achievements{
+    grid-template-columns: 1fr;
+  }
+
+  .infoText {
+    width: 100%;
+  }
+}

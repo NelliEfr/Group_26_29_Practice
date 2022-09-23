@@ -31,3 +31,14 @@
   width: 107px;
   margin: 30px 0;
 }
+
+@media (max-width: 1055px){
+  .card_item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .title {
+    margin: 0;
+  }
+}

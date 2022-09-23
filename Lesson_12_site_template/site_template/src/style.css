@@ -19,4 +19,8 @@
   .wrapper {
     padding: 0 90px;
   }
+
+  .subheader {
+    display: none;
+  }
 }

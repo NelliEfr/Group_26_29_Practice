@@ -18,3 +18,12 @@ h2 {
   gap: 30px;
 }
 
+@media (max-width: 1055px){
+  .wrapper {
+    margin: 0 90px;
+  }
+
+  .cards_container {
+    grid-template-columns: 1fr;
+  }
+}
