@@ -9,7 +9,7 @@
 .form_block {
   border: 1px solid white;
   height: 400px;
-  width: 600px;
+  width: 300px;
 }
 
 .info_block p {
@@ -38,4 +38,5 @@
 
 .all_blocks {
   display: flex;
+  justify-content: space-between;
 }

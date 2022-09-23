@@ -6,6 +6,7 @@ export default function Contacts() {
   return (
     <section className={s.contacts}>
       <div className={['wrapper', s.all_blocks].join(' ')}>
+        
         <div className={s.info_block}>
           <h2>Связь с нами</h2>
           <p>У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
@@ -19,8 +20,8 @@ export default function Contacts() {
           </div>
         </div>
 
-
         <div className={s.form_block}></div>
+
       </div>  
     </section>
   )
