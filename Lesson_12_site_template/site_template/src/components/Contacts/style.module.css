@@ -1,0 +1,41 @@
+.contacts {
+  background-image: url('media/background.png');
+  color: white;
+  padding: 122px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.form_block {
+  border: 1px solid white;
+  height: 400px;
+  width: 600px;
+}
+
+.info_block p {
+  font-size: 18px;
+}
+
+.main_contacts {
+  font-size: 21px;
+
+  display: flex;
+  justify-content: end;
+  margin: 80px 20px 0 20px;
+}
+
+.email {
+  display: flex;
+}
+
+.phone {
+  margin-right: 40px;
+}
+
+.email p {
+  margin-left: 10px;
+}
+
+.all_blocks {
+  display: flex;
+}
