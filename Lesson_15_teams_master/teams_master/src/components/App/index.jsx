@@ -7,14 +7,25 @@ import { useState } from 'react'
 
 function App() {
   const [ teams, setTeams ] = useState([]);
+  const [ users, setUsers ] = useState([]);
 
   const addTeam = (value) => {
     setTeams([...teams, { value, label: value }])
   }
 
+  const addUser = (name, team) => {
+    setUsers(
+      [...users, {
+        id: Date.now(),
+        name,
+        team
+      }]
+    )
+  }
+
   return (
     <div>
-      <Context.Provider value={{ teams, addTeam }}>
+      <Context.Provider value={{ teams, users, addTeam, addUser }}>
         <Nav />
         <Routes>
           <Route path='/configurations' element={ <ConfigurationsPage />} />
