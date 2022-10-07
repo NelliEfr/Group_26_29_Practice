@@ -1,0 +1,15 @@
+.nav_menu {
+  height: 100px;
+  background-color: #2980b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.nav_menu a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
