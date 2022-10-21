@@ -11,7 +11,9 @@ export const productReducer = (state = defaulteState, action) => {
       ...action.payload,
       id: Date.now()
     }]
-  }  else {
+  }  else if(action.type === 'DELETE_PRODUCT') {
+    return state.filter(el => el.id !== action.payload)
+  } else {
     return state
   }
 }

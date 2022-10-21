@@ -1,5 +1,5 @@
 import React from 'react'
-import { addProduct } from '../../store/reducer/productReducer';
+import { addProduct, deleteProduct } from '../../store/reducer/productReducer';
 import { useDispatch, useSelector } from 'react-redux'
 import ProductItem from '../ProductItem'
 
@@ -19,6 +19,10 @@ export default function Products() {
     price.value = '';
   }
 
+  const delete_product = (id) => {
+    dispatch(deleteProduct(id))
+  }
+
   return (
     <div>
 
@@ -30,7 +34,7 @@ export default function Products() {
 
       <div>
         {
-          state.map(el => <ProductItem key={el.id} {...el} />)
+          state.map(el => <ProductItem key={el.id} {...el} delete_product={delete_product} />)
         }
       </div>
 
