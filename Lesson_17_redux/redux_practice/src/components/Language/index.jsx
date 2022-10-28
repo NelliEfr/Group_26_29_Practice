@@ -1,7 +1,6 @@
 import React from 'react'
-import { languageReducer } from '../../store/reducer/languageReducer'
 import { useDispatch, useSelector } from 'react-redux'
-import { addCard } from '../../store/reducer/languageReducer'
+import { addCard, changeCard } from '../../store/reducer/languageReducer'
 import LanguageCard from '../LanguageCard';
 
 export default function Language() {
@@ -20,6 +19,8 @@ export default function Language() {
     eng.value = '';
   }
 
+  const change = (id) => dispatch(changeCard(id));
+
   return (
     <div>
       <form onSubmit={submit}>
@@ -30,7 +31,7 @@ export default function Language() {
 
       <div>
         {
-          state.map(el => <LanguageCard key={el.id} {...el} />)
+          state.map(el => <LanguageCard key={el.id} {...el} change={change} />)
         }
       </div>
     </div>
