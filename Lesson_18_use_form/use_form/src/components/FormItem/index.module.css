@@ -1,0 +1,19 @@
+.form_item {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 420px;
+}
+
+.form_title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.info_text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7B8E98;
+  margin: 24px 0;
+}

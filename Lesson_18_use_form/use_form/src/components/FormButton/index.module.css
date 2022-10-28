@@ -1,0 +1,24 @@
+.form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  margin: 4px 0;
+
+  width: 356px;
+  height: 48px;
+  border-radius: 55px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.yellow {
+  background-color: #FFE44D;
+  border: 1px solid transparent;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid #CFD8DC;
+}

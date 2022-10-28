@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Oswald&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
