@@ -4,7 +4,7 @@ import FormInput from '../FormInput'
 import s from './index.module.css'
 import { useForm } from 'react-hook-form'
 
-export default function FormItem() {
+export default function FormItem({ title, button, infoText, formType }) {
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     mode: 'onBlur'
@@ -35,7 +35,7 @@ export default function FormItem() {
 
   return (
     <form className={s.form_item} onSubmit={handleSubmit(submit)}>
-      <p className={s.form_title}>Registration</p>
+      <p className={s.form_title}>{ title }</p>
       <FormInput
         {...emailRegister}
         id='email'
@@ -59,10 +59,10 @@ export default function FormItem() {
         { errors?.password && <p>{ errors?.password?.message }</p> }
       </div>
 
-      <p className={s.info_text}>By registering on the site, you agree to our Rules and Privacy Policy and agree to receive newsletters.</p>
+      <p className={s.info_text}>{ infoText }</p>
 
-      <FormButton color='yellow'>Registration</FormButton>
-      <FormButton color='white'>Login</FormButton>
+      <FormButton color='yellow'>{ button.submit }</FormButton>
+      <FormButton color='white'>{ button.redirect }</FormButton>
     </form>
   )
 }
