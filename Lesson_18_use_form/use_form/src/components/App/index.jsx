@@ -15,7 +15,15 @@ function App() {
         title={'Login'}
         button={{submit: 'Login', redirect: 'Registration'}}
         infoText={'Restore password'}
-        formType={'registration'}
+        formType={'login'}
+      />  
+
+      <FormItem 
+        title={'Reset password'}
+        button={{submit: 'Reset'}}
+        infoText={'The temporary password is valid for 24 hours.'}
+        formType={'reset_password'}
+        infoTextAdditional={'To receive a temporary password, you must enter the email address you provided during registration.'}
       />  
 
     </div>

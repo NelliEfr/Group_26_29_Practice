@@ -4,7 +4,7 @@ import FormInput from '../FormInput'
 import s from './index.module.css'
 import { useForm } from 'react-hook-form'
 
-export default function FormItem({ title, button, infoText, formType }) {
+export default function FormItem({ title, button, infoText, formType, infoTextAdditional }) {
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     mode: 'onBlur'
@@ -36,6 +36,9 @@ export default function FormItem({ title, button, infoText, formType }) {
   return (
     <form className={s.form_item} onSubmit={handleSubmit(submit)}>
       <p className={s.form_title}>{ title }</p>
+
+      <p className={s.info_text}>{ infoTextAdditional }</p>
+      
       <FormInput
         {...emailRegister}
         id='email'
@@ -48,12 +51,16 @@ export default function FormItem({ title, button, infoText, formType }) {
         { errors?.email && <p>{ errors?.email?.message }</p> }
       </div>
 
-      <FormInput
-        {...passwordRegister}
-        name='password'
-        type='password'
-        placeholder='Password' 
-      />
+      {
+        ['registration', 'login'].includes(formType)
+        ? <FormInput
+            {...passwordRegister}
+            name='password'
+            type='password'
+            placeholder='Password' 
+          />
+        : ''
+      }
 
       <div>
         { errors?.password && <p>{ errors?.password?.message }</p> }
@@ -62,7 +69,13 @@ export default function FormItem({ title, button, infoText, formType }) {
       <p className={s.info_text}>{ infoText }</p>
 
       <FormButton color='yellow'>{ button.submit }</FormButton>
-      <FormButton color='white'>{ button.redirect }</FormButton>
+
+      {
+        ['registration', 'login'].includes(formType)
+        ?  <FormButton color='white'>{ button.redirect }</FormButton>
+        : ''
+      }
+     
     </form>
   )
 }
