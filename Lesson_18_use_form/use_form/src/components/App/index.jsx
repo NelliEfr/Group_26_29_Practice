@@ -1,9 +1,16 @@
+import { useState } from 'react'
 import FormItem from "../FormItem";
 import '../../style.css'
+import Modal from "../Modal";
 
 function App() {
+
+  const [modalActive, setModalActive] = useState(false);
+
   return (
     <div>
+      <button onClick={() => setModalActive(true)}>Open modal window</button>
+      <Modal active={modalActive} setActive={setModalActive} />
       <FormItem 
         title={'Registration'}
         button={{submit: 'Registration', redirect: 'Login'}}
