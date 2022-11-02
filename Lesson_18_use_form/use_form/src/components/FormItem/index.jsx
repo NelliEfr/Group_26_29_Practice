@@ -67,7 +67,21 @@ export default function FormItem({ title, button, infoText, formType, infoTextAd
         { errors?.password && <p>{ errors?.password?.message }</p> }
       </div>
 
-      <p className={s.info_text}>{ infoText }</p>
+      {
+        ['registration', 'reset_password'].includes(formType)
+        ? <p className={s.info_text}>{ infoText }</p>
+        : <Link to={'/reset_password_form'} style={{ textDecoration: 'none' }}>
+            <p className={s.info_text}>{ infoText }</p>
+          </Link>
+      }
+
+      {/* {
+        ['login'].includes(formType)
+        ? <Link to={'/reset_password_form'}>
+            <p className={s.info_text}>{ infoText }</p>
+          </Link>
+        : ''
+      } */}
 
       <FormButton color='yellow'>{ button.submit }</FormButton>
 
