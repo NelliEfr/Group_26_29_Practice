@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import FormItem from "../FormItem";
 import '../../style.css'
 import Modal from "../Modal";
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -9,30 +9,11 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => setModalActive(true)}>Open modal window</button>
-      <Modal active={modalActive} setActive={setModalActive} />
-      <FormItem 
-        title={'Registration'}
-        button={{submit: 'Registration', redirect: 'Login'}}
-        infoText={'By registering on the site, you agree to our Rules and Privacy Policy and agree to receive newsletters.'}
-        formType={'registration'}
-      />
+      <Link to='/registration_form'>
+        <button onClick={() => setModalActive(true)}>Open modal window</button>
+      </Link>
 
-      <FormItem 
-        title={'Login'}
-        button={{submit: 'Login', redirect: 'Registration'}}
-        infoText={'Restore password'}
-        formType={'login'}
-      />  
-
-      <FormItem 
-        title={'Reset password'}
-        button={{submit: 'Reset'}}
-        infoText={'The temporary password is valid for 24 hours.'}
-        formType={'reset_password'}
-        infoTextAdditional={'To receive a temporary password, you must enter the email address you provided during registration.'}
-      />  
-
+      <Modal active={modalActive} setActive={setModalActive} /> 
     </div>
   );
 }
