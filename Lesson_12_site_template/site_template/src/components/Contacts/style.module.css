@@ -6,6 +6,10 @@
   background-position: center;
 }
 
+.info_block {
+  width: 445px;
+}
+
 .form_block {
   border: 1px solid white;
   height: 400px;
@@ -14,6 +18,10 @@
 
 .info_block p {
   font-size: 18px;
+}
+
+.info_block h2 {
+  margin-bottom: 60px;
 }
 
 .main_contacts {

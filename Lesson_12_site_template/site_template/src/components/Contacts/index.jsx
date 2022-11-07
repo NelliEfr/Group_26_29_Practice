@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import { MailOutlined } from '@ant-design/icons'
+import Form from '../Form'
 
 export default function Contacts() {
   return (
@@ -20,7 +21,7 @@ export default function Contacts() {
           </div>
         </div>
 
-        <div className={s.form_block}></div>
+        <Form />
 
       </div>  
     </section>

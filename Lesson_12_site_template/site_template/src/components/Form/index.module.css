@@ -1,0 +1,50 @@
+.contacts_form {
+  width: 540px;
+  position: relative;
+}
+
+.contacts_form p {
+  margin-bottom: 15px;
+}
+
+.contacts_form input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 255px;
+  padding-bottom: 15px;
+}
+
+.contacts_names {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.contacts_form textarea {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  resize: none;
+  width: 540px;
+  height: 84px;
+} 
+
+.contacts_form textarea:focus,
+.contacts_form input:focus {
+  outline: none;
+}
+
+.contacts_form button {
+  width: 270px;
+  height: 60px;
+  background-color: #005FA3;
+  border-color: transparent;
+  color: white;
+  margin: 50px 0;
+  position: absolute;
+  right: 0;
+  display: block;
+}
